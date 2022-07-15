@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace ConsoleTextQuest
         static int roomNumber = 1;
         static bool hasKey = false;
         static bool MagicArt = false;
-        static int deathCount = 0;
+        static int deathCouunt = 0;
         static int mysteryCount = 0;
         public static void Main(string[] args)
         {
@@ -258,6 +258,7 @@ namespace ConsoleTextQuest
                 hasKey = false;
                 MagicArt = false;
                 Console.ReadLine();
+                roomNumber = 1;
                 Introduction();
             }
 
