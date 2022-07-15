@@ -11,7 +11,7 @@ namespace ConsoleTextQuest
         static int roomNumber = 1;
         static bool hasKey = false;
         static bool MagicArt = false;
-        static int deathCouunt = 0;
+        static int deathCount = 0;
         static int mysteryCount = 0;
         public static void Main(string[] args)
         {
