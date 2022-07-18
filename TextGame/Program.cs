@@ -63,17 +63,15 @@ namespace ConsoleTextQuest
                 {
                     Console.Clear();
                     Console.WriteLine("Вступив в бой ты нанёс монстру пару ожогов");
-                    Console.WriteLine("");
-                    Console.WriteLine("Нажмите Enter для продолжения....");
-                    Console.ReadLine();
                     Console.WriteLine("Монстр как будто ничего не почуствовал и теперь атакует в ответ");
                     Console.WriteLine("Схватив тебя за голову монстр отрывает её и ты погибаешь");
+                    deathCount += 1;
+                    Console.WriteLine("Ваше количество смертей = " + deathCount);
+                    Console.WriteLine("С какой попытки была решена загадка = " + mysteryCount);
                     Console.WriteLine("");
                     Console.WriteLine("Нажмите Enter для завершения игры....");
-                    deathCount += 1;
-                    hasKey = false;
-                    MagicArt = false;
-                    Introduction();
+                    Console.ReadLine();
+                    Environment.Exit(0);
                 }
                 else if (option == 2)
                 {
@@ -303,7 +301,7 @@ namespace ConsoleTextQuest
             Console.WriteLine("В душу не лезу, ловлю изменения облика.");
             Console.WriteLine("Дева, вглянув на меня, приосанится.");
             Console.WriteLine("Старец, нахмурится, дитятко расхулиганится.");
-            Console.WriteLine("Кто я? ('Последняя стрка написана прямо под дверью')");
+            Console.WriteLine("Кто я? ('Последняя строка написана прямо под дверью')");
             Console.WriteLine("");
             Console.WriteLine("Теперь нужно ввести слово");
             string word = Console.ReadLine();
